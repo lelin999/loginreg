@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Thank You</title>
+</head>
+<body>
+	<h1>Welcome {{request.session.poop}}, you have successfully logged in!</h1>
+	<form action='logout' method='post'>
+		{% csrf_token %}
+		<input type="submit" value="Log Out">
+	</form>
+</body>
+</html>
